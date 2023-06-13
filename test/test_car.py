@@ -9,8 +9,7 @@ from model.thovex import Thovex
 from Factory.CarFactory import CarFactory
 
 class TestCalliope(unittest.TestCase):
-    # def __int__(self):
-    #     self.factory = CarFactory()
+    f = CarFactory();
     def test_battery_should_be_serviced(self):
         today = datetime.today().date()
         last_service_date = today.replace(year=today.year - 3).strftime("%Y-%m-%d")
